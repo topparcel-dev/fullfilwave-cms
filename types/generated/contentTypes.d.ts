@@ -647,7 +647,7 @@ export interface ApiHeroHero extends Struct.SingleTypeSchema {
 export interface ApiLegalLegal extends Struct.CollectionTypeSchema {
   collectionName: 'legals';
   info: {
-    displayName: 'legal';
+    displayName: 'Legal';
     pluralName: 'legals';
     singularName: 'legal';
   };
@@ -660,6 +660,19 @@ export interface ApiLegalLegal extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
+    content: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
