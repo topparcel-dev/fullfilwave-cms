@@ -3448,6 +3448,11 @@
     argparse "~1.0.9"
     string-argv "~0.3.1"
 
+"@sensinum/strapi-utils@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@sensinum/strapi-utils/-/strapi-utils-1.0.10.tgz#77e2adafbe929421d765292f9209142052a0cbe7"
+  integrity sha512-/3B4yhfMik4rcVm7XswVLEHamRZOV899N3I380eI3bD1MxI500P11/Wra6Wrhi6L/JLCzn8LuOHLm2fAOx5zZw==
+
 "@simov/deep-extend@^1.0.0":
   version "1.0.0"
   resolved "https://registry.npmjs.org/@simov/deep-extend/-/deep-extend-1.0.0.tgz"
@@ -5029,6 +5034,18 @@
   integrity sha512-4BAffykYOgO+5nzBWYwE3W90sBgLJoUPRWWcL8wlyiM8IB8ipJz3UMJ9KXQd1RKQXpKp8Tutn80HZtWsu2u76w==
   dependencies:
     defer-to-connect "^2.0.0"
+
+"@tanstack/query-core@5.90.12":
+  version "5.90.12"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.90.12.tgz#e1f5f47e72ef7d0fc794325936921c700352515e"
+  integrity sha512-T1/8t5DhV/SisWjDnaiU2drl6ySvsHj1bHBCWNXd+/T+Hh1cf6JodyEYMd5sgwm+b/mETT4EV3H+zCVczCU5hg==
+
+"@tanstack/react-query@^5.40.0":
+  version "5.90.12"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.90.12.tgz#49536842eff6487a9e645a453fea2642d8f4f209"
+  integrity sha512-graRZspg7EoEaw0a8faiUASCyJrqjKPdqJ9EwuDRUF9mEYJ1YPczI9H+/agJ0mOJkPCJDk0lsz5QTrLZ/jQ2rg==
+  dependencies:
+    "@tanstack/query-core" "5.90.12"
 
 "@tanstack/react-virtual@^3.10.8":
   version "3.13.12"
@@ -11277,14 +11294,14 @@ rc@1.2.8, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dnd-html5-backend@16.0.1:
+react-dnd-html5-backend@16.0.1, react-dnd-html5-backend@^16.0.1:
   version "16.0.1"
   resolved "https://registry.npmjs.org/react-dnd-html5-backend/-/react-dnd-html5-backend-16.0.1.tgz"
   integrity sha512-Wu3dw5aDJmOGw8WjH1I1/yTH+vlXEL4vmjk5p+MHxP8HuHJS1lAGeIdG/hze1AvNeXWo/JgULV87LyQOr+r5jw==
   dependencies:
     dnd-core "^16.0.1"
 
-react-dnd@16.0.1:
+react-dnd@16.0.1, react-dnd@^16.0.1:
   version "16.0.1"
   resolved "https://registry.npmjs.org/react-dnd/-/react-dnd-16.0.1.tgz"
   integrity sha512-QeoM/i73HHu2XF9aKksIUuamHPDvRglEwdHL4jsp784BgUuWcg6mzfxT0QDdQz8Wj0qyRKx2eMg8iZtWvU4E2Q==
@@ -12314,6 +12331,21 @@ strapi-plugin-auto-slug-manager-a-mi13@^1.1.0:
   dependencies:
     slugify "^1.6.6"
 
+strapi-plugin-navigation@^3.2.6:
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-navigation/-/strapi-plugin-navigation-3.2.6.tgz#e214e2699ada716b65f0528b2e34d5cedaa700fd"
+  integrity sha512-zy9IGIrEoWDpzqPnq1Ha78nKOajP3OhkvaMj4LizloaFhtOV3/yQLnfRmyoHkCAkIV3ceb1yP/slvHlaQx5jOA==
+  dependencies:
+    "@sensinum/strapi-utils" "^1.0.10"
+    "@sindresorhus/slugify" "1.1.0"
+    "@tanstack/react-query" "^5.40.0"
+    pluralize "8.0.0"
+    react-dnd "^16.0.1"
+    react-dnd-html5-backend "^16.0.1"
+    react-intl "6.6.2"
+    uuid "^10.0.0"
+    zod "3.25.67"
+
 stream-browserify@3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/stream-browserify/-/stream-browserify-3.0.0.tgz"
@@ -13054,6 +13086,11 @@ utils-merge@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
+
+uuid@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-10.0.0.tgz#5a95aa454e6e002725c79055fd42aaba30ca6294"
+  integrity sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==
 
 uuid@^8.3.2:
   version "8.3.2"
